@@ -1,2 +1,5 @@
 flask
 git+https://github.com/mmabrouk/chatgpt-wrapper
+eth-utils
+web3
+py-solc-x
