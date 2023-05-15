@@ -4,9 +4,13 @@ The backend serves is a middleware that connects [our game](https://github.com/P
 
 ```mermaid
 graph TD;
-    ChatGPT-- narrative -->Client;
+    ChatGPT-- relay -->Server;
+    Server-- narrative/illustration -->Client;
     Client-- transaction -->Blockchain;
-    Blockchain-- state_change -->ChatGPT;
+    Blockchain-- relay -->Server;
+    Server-- state_change -->ChatGPT;
+    Server-- key_event -->Midjourney;
+    Midjourney--  illustration -->Server;
     Client-- output -->User;
     User-- input -->Client;
 ```
