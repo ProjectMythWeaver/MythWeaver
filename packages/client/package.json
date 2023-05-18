@@ -1,34 +1,40 @@
 {
   "name": "client",
-  "license": "MIT",
-  "private": true,
   "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.46.1",
-    "@typescript-eslint/parser": "^5.46.1",
-    "eslint": "^8.29.0",
-    "typescript": "^4.6.4",
-    "vite": "^3.2.3"
+    "build": "vite build",
+    "dev": "wait-port localhost:8545 && vite",
+    "initialize": "pnpm build",
+    "preview": "vite preview",
+    "test": "tsc --noEmit"
   },
   "dependencies": {
-    "@improbable-eng/grpc-web": "^0.15.0",
-    "@latticexyz/network": "1.43.0",
-    "@latticexyz/recs": "1.43.0",
-    "@latticexyz/services": "1.43.0",
-    "@latticexyz/std-client": "1.43.0",
-    "async-mutex": "^0.4.0",
+    "@ethersproject/providers": "^5.7.2",
+    "@latticexyz/common": "2.0.0-alpha.1.148+85e38ba8",
+    "@latticexyz/dev-tools": "2.0.0-alpha.1.148+85e38ba8",
+    "@latticexyz/network": "2.0.0-alpha.1.148+85e38ba8",
+    "@latticexyz/react": "2.0.0-alpha.1.148+85e38ba8",
+    "@latticexyz/recs": "2.0.0-alpha.1.148+85e38ba8",
+    "@latticexyz/schema-type": "2.0.0-alpha.1.148+85e38ba8",
+    "@latticexyz/std-client": "2.0.0-alpha.1.148+85e38ba8",
+    "@latticexyz/utils": "2.0.0-alpha.1.148+85e38ba8",
+    "@latticexyz/world": "2.0.0-alpha.1.148+85e38ba8",
+    "@wagmi/chains": "^0.2.22",
+    "contracts": "workspace:*",
     "ethers": "^5.7.2",
-    "mobx": "^6.7.0",
-    "nice-grpc": "^2.0.1",
-    "nice-grpc-web": "^2.0.1",
-    "proxy-deep": "^3.1.1",
     "react": "^18.2.0",
-    "threads": "^1.7.0"
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.6",
+    "@types/react-dom": "^18.2.4",
+    "@vitejs/plugin-react": "^3.1.0",
+    "eslint-plugin-react": "7.31.11",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "vite": "^4.2.1",
+    "wait-port": "^1.0.4"
   }
 }
