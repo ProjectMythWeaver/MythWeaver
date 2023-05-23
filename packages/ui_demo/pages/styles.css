@@ -1,0 +1,37 @@
+/* font */
+@font-face {
+  font-family: DePixel;
+  src: url("../fonts/depixelhalbfett.woff2") format("woff2"),
+    url("../fonts/depixelhalbfett.woff") format("woff");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+img {
+  user-select: none;
+}
+
+/* util */
+.flex1 {
+  flex: 1;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+.flexCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.mostly-customized-scrollbar::-webkit-scrollbar {
+  width: 0px;
+  height: 8px;
+  background-color: #aaa; /* or add it to the track */
+}

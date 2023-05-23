@@ -1,0 +1,218 @@
+.actions {
+  position: absolute;
+  right: 0;
+  bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.btnText {
+  height: 40px;
+
+  font-family: "DePixel";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  padding-right: 40px;
+
+  color: #281313;
+}
+.btnBase {
+  /* width: 381px; */
+  width: 360px;
+  height: 88px;
+  cursor: pointer;
+  user-select: none;
+}
+.btnBase:hover {
+  width: 540px;
+}
+.btnStart {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 11.18%,
+    rgba(255, 176, 151, 0) 30.96%,
+    rgba(255, 124, 82, 0.5) 100%
+  );
+  backdrop-filter: blur(15px);
+  transition: all 0.2s ease-in-out;
+}
+.btnQuit {
+  margin-top: 40px;
+  backdrop-filter: blur(15px);
+}
+
+.modalBox {
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.infoBox {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 100px 60px;
+  padding-bottom: 80px;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  border-width: 2px 0px 2px 2px;
+  border-style: solid;
+  border-color: #e3e3e3;
+  backdrop-filter: blur(30px);
+}
+
+.infoBoxStep {
+  font-family: DePixel;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #bbd6cf;
+}
+.infoBoxTitle {
+  font-family: DePixel;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #bbd6cf;
+  margin-top: 30px;
+}
+
+.options {
+  width: 500px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.actionButton {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+
+  font-family: "VT323";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+
+  color: #f8f4ed;
+
+  padding: 20px 40px;
+
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  outline: 4px solid rgba(0, 0, 0, 0.5);
+
+  cursor: pointer;
+}
+
+.actionButton:hover {
+  border: 1px solid #d4d4d4;
+}
+
+.optionsItem {
+  width: 100%;
+  height: 110px;
+
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+
+  font-family: "VT323";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+
+  color: #f8f4ed;
+
+  padding: 20px 40px;
+
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  outline: 4px solid rgba(0, 0, 0, 0.5);
+
+  cursor: pointer;
+}
+
+.itemSelected {
+  border: 1px solid #d4d4d4;
+  box-shadow: 0px 0px 12px 1px rgba(214, 200, 227, 0.8),
+    inset 0px 0px 7px 3px rgba(188, 152, 246, 0.5);
+}
+
+.sceneBuildingBanner {
+  font-family: "VT323";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+
+  color: #ffffff;
+
+  text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.75);
+
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 1.18%,
+    rgba(70, 70, 70, 0) 1.19%,
+    rgba(21, 21, 21, 0.5) 51.77%,
+    rgba(21, 21, 21, 0) 104.88%
+  );
+  backdrop-filter: blur(15px);
+
+  padding: 24px 100px;
+}
+
+.sceneBuildingCenter {
+  width: 100%;
+  margin-top: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@keyframes spining {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.sceneBuildingCenterLogo {
+  animation: spining 4s linear;
+  animation-iteration-count: infinite;
+}
+
+/* util */
+.flex1 {
+  flex: 1;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+.flexCol {
+  display: flex;
+  flex-direction: column;
+}
