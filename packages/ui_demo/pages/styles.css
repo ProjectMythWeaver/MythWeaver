@@ -29,3 +29,9 @@ img {
   display: flex;
   flex-direction: column;
 }
+
+.mostly-customized-scrollbar::-webkit-scrollbar {
+  width: 0px;
+  height: 8px;
+  background-color: #aaa; /* or add it to the track */
+}

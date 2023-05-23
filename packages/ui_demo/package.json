@@ -7,7 +7,7 @@
   },
   "homepage": "https://next-auth-example.vercel.app",
   "scripts": {
-    "dev": "PORT=4040 next",
+    "dev": "PORT=4049 next",
     "build": "next build",
     "start": "next start"
   },
