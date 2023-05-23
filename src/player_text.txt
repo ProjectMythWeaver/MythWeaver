@@ -1,0 +1,66 @@
+ Here is the quest summary for you Rex:
+
+You have encountered a creature called CigMon who belongs to a group of token creatures known as CigPunks. These CigPunks were once united but have now become separated and scattered. CigMon has asked for your help to reunite and form a support group of CigPunks. 
+
+To achieve this, you must navigate a puzzle dungeon called the "Vaporized Halls". Hidden behind strings of code, each layer of the dungeon holds one of the CigPunks. By solving the puzzle in each room, you will receive a key to unlock the next room and find the next CigPunk.
+
+Once you have retrieved all the CigPunks, a unique blockchain community will be established which will benefit CigTokemon, the CigPunks, and future projects.
+
+Here are 3 options for you to proceed with the quest:
+
+1. Focus on solving each puzzle room systematically by analyzing the codes and patterns. Take your time to understand each clue before proceeding to find all the CigPunks. 
+2. Rush through the puzzles by guessing and trying different solutions. You may get
+1
+ Here is the DM's response:
+
+{  
+"result": "Failure",
+"reason":"you do not have enough points on Transparency:" ,  
+"progress": "You have contacted 3 out of 10 CigPunks. However, your lack of transparency means the remaining CigPunks do not fully trust you yet.",
+"options":  
+[
+ "1. Work to become more transparent by sharing details of your quest publicly and answering questions from the community",
+ "2. Convince the CigPunks you have already found to vouch for you to the remaining members", 
+"3. Focus on exploring the puzzle dungeon to find more keys and clues before trying to contact more CigPunks"
+],
+"stats": {
+"Life": 35,  
+"Stamina": 35,
+"Transparency": 25, 
+"Decentralization": 30,   
+"Privacy": 20
+}
+}
+ Here is a summary of the quest: 
+
+Quest 1: Reunite the scattered CigPunks 
+Goal: Travel with CigTokemon to find and gather fellow token creatures called CigPunks into a support group.  
+Puzzle: Navigate a hidden multi-room dungeon called "Vaporized Halls" by solving puzzles in each room to find keys to unlock the next room. Each CigPunk creature you find holds one of these keys.
+Reward: Forming this diverse support group will strengthen your community in the blockchain world and enhance capabilities for future projects.
+
+Here are three options for how you can approach this quest:
+
+1. Focus on befriending each CigPunk by appealing to their interests and values. Build trust and convince them to join your cause through diplomatic persuasion. This approach favors your Decentralization and Transparency stats. 
+2. Use your analytical mind to swiftly solve each puzzle in the dungeon and collect the CigPunks' keys. Prioritize efficiency over relationship-building. This approach favors your Life and Stamina stats.
+3. Strike a balance between the first two options. Solve puzzles promptly but take time to connect with
+1
+ Here is my attempt at a response:
+
+{
+"result": "Failure",  
+"reason": "you do not have enough points on Stamina: to succeed",
+"progress": "You have contacted 3 out of 10 CigPunks. However, exploring the Vaporized Halls to find the keys and remaining CigPunks has tired you out. You must rest to regain your stamina before continuing the quest.",
+"options":  
+[
+"1. Rest at the save point to restore all stats", 
+"2. Eat a ration to restore Stamina only (other stats remain unchanged)",
+"3. Drink an energy potion to boost Stamina (other stats remain unchanged)" 
+],  
+"stats": {  
+"Life": 35,   
+"Stamina": 10, 
+"Transparency": 25,  
+"Decentralization": 30,   
+"Privacy": 20
+}
+}

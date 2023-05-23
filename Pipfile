@@ -4,6 +4,11 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+langchain = "*"
+pathos = "*"
+fastapi = "*"
+uvicorn = "*"
+anthropic = "*"
 
 [dev-packages]
 ipykernel = "*"

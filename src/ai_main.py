@@ -78,15 +78,15 @@ class DM_STATE_SIMPLE:
         print_internal(internal_msg_for_LLM)
         rep = self.conversation_mainGame.predict(input=internal_msg_for_LLM)
         print_player(rep)
-        updatedStats = self.llm2(f"""
-        {rep}
-        retrieve from above message the player stats
-        output a json format that can be run with 
-        json.loads(json_string)
-        only the stats part of the json string
-        """)
-        print_player("xxxxxxx"+updatedStats)
-
+        # updatedStats = self.llm2(f"""
+        # {rep}
+        # retrieve from above message the player stats
+        # output a json format that can be run with 
+        # json.loads(json_string)
+        # only the stats part of the json string
+        # """)
+        # print_player("xxxxxxx"+updatedStats)
+        updatedStats = ""
         return rep,updatedStats
 
 
