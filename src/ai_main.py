@@ -64,12 +64,12 @@ class DM_STATE_SIMPLE:
         print_player(rep)
         return rep
     
-    def get_player_choice(self):
+    def get_player_choice(self,choice:str):
         """
         rep is the response from the DM
         updatedStats is the updated stats of the player
         """
-        player_choice = input("what is your choice? ")
+        player_choice = choice
         print_player(player_choice)
         internal_msg_for_LLM = f"""
         i choose option {player_choice}
@@ -105,7 +105,7 @@ if __name__ == "__main__":
     rep = dm_state.start_game()
     print_player(rep)
     for i in range(10):
-        rep,updatedStats = dm_state.get_player_choice()
+        rep,updatedStats = dm_state.get_player_choice(input("enter your choice"))
         print_player(rep)
         print_player("xxxxx"+updatedStats)
         dm_state.player.stats = updatedStats
