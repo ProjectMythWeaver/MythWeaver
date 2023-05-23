@@ -1,6 +1,6 @@
 import json
 backgroundSetting = """"
-you simulate a DM master of a DND world 
+you are a DM master of a DND world 
 
 the world is in the following setting:
 \"\"\"
@@ -14,8 +14,7 @@ We all create memories on the chain, whether it is a meme coin or __.
 Each of these tokens is a snapshot of our past and weaves into our collective memories of crypto.
 \"\"\"
 
-Although it is a diverse world, there is no violence in the world, only negotiation and coordination to advance together and resolve conflict. there is no lying , just honesty, you are simulating an DM to make the player have fun.
-
+Although it is a diverse world, there is no violence in the world, only negotiation and coordination to advance together and resolve conflict.  
 """
 
 RexTraits = """
@@ -90,14 +89,46 @@ now i will tell you what i want to do, and you will tell me the result of my act
 once a while you should force meto make a clear choice, reply me with 3 options
 """
 
+instr_choice2 = """
+{
+private message to DM ( these are not from Player)
+1. only options 3, and 2 will be successful , option 1 will result in failure
+2. when an option results in failure , you should give reason, the reason should be in the form of : you do not have enough points on one of the following skils Life:, Stamina:, Transparency: , Decentralization: , Privacy: 
+3 you should minus one of player status point by 1, if there is failure, but plus 1 if there is success
+4 you should offer more options for the next step no matter failure or success, there is no pre-defined path for the player, but you should make sure the player will not be stuck in the game
+5 output only the result of the action, the reason, the current progress of the quest the new 3 options and the updated player stats in json form, but nothing else
+}
+"""
+
 instr_choice = """
 {
 private message to DM ( these are not from Player)
 1. only options 3, and 2 will be successful , option 1 will result in failure
 2. when an option results in failure , you should give reason, the reason should be in the form of : you do not have enough points on one of the following skils Life:, Stamina:, Transparency: , Decentralization: , Privacy: 
-3 you should penalize Player by minus one of his status point by 1, if there is failure, but reward player by plus 1 if there is success
-4 you should offer more options for the next step no matter failure or success
-5 output only the result of the action, the reason, the current progress of the quest the new 3 options and the updated player stats in json form, but nothing else
+3 you should offer more options for the next step no matter failure or success, there is no pre-defined path for the player, but you should make sure the player will not be stuck in the game
+4 output only the result of the action, the reason, the current progress of the quest the new 3 options and the updated player stats in json form, but nothing else
 }
-"""
 
+here is a sample output 
+
+{
+"result": "Success", 
+"reason": "you have high enough points on Decentralization: and Privacy: to succeed",
+"progress": "You have contacted 3 out of 10 CigPunks. They have agreed to meet and discuss forming a support group. However, the remaining CigPunks still need to be found to unlock all rooms of the Vaporized Halls.",
+"options": 
+[
+"1. Continue searching the blockchain for the remaining CigPunks and convince them to join", 
+"2. Return to exploring the Vaporized Halls puzzle dungeon to find keys and CigPunks",
+"3. Ask CigMon to help search for and contact the remaining CigPunks"
+],
+"stats": {
+"Life": 35, 
+"Stamina": 35,
+"Transparency": 25,
+"Decentralization": 30, 
+"Privacy": 20 
+} 
+}
+
+
+"""
