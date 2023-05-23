@@ -93,20 +93,22 @@ class DM_STATE_SIMPLE:
 def print_player(text):
     print(text)
 
-
-if __name__ == "__main__":
+def default_game_setting():
     llm= ChatAnthropic(model="claude-v1.3-100k")
     rex_player = PLAYER(data.RexTraits,data.RexStats,"Rex")
     cigmon_creature = CREATURE(data.CigMon_Traits,data.CigMon_Stats,"CigMon",data.CigMon_bg,data.CigMon_Desc)
     dm_state = DM_STATE_SIMPLE(data.backgroundSetting,rex_player,cigmon_creature,data.Quest1,llm)
+    return dm_state
+
+if __name__ == "__main__":
+    dm_state = default_game_setting()
     rep = dm_state.start_game()
     print_player(rep)
     for i in range(10):
         rep,updatedStats = dm_state.get_player_choice()
         print_player(rep)
         print_player("xxxxx"+updatedStats)
-        rex_player.stats = updatedStats
-
+        dm_state.player.stats = updatedStats
 if False:
     print_player("\n\n\n***new game start\n\n\n")
     print_internal("\n\n\n***new game start\n\n\n")
